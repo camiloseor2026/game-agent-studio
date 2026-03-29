@@ -19,8 +19,9 @@ Demostrar que un pipeline agentic bien diseñado puede reducir tiempo de iteraci
 
 ```text
 /docs          Visión, arquitectura, agentes, roadmap, QA, research, decisiones
-/agents        Definiciones y artefactos por agente (orquestador, gameplay, world, etc.)
-/skills        Skills reutilizables para Cursor / agentes
+/agents        Definiciones y artefactos por agente (p. ej. orquestador en agents/orchestrator/)
+/skills        Skills del proyecto (p. ej. project-management, game-dev-lifecycle)
+/.cursor       Punto de montaje para Cursor: symlinks a agents/ y skills/ (subagentes + skills)
 /mcp           Configuración y notas de MCPs
 /prompts       Prompts versionados
 /templates     Plantillas (briefs, outputs, bugs)

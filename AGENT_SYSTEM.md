@@ -16,10 +16,10 @@
 - Disparar validaciones  
 - Escalar decisiones cuando haya bloqueo  
 
-**Artefactos sugeridos** (`/agents/orchestrator/`)
+**Artefactos sugeridos** (`agents/orchestrator/`)
 
-- Plantillas de brief de tarea  
-- Formato de output consolidado  
+- Definición del subagente Cursor: `agents/orchestrator/orchestrator.md` (enlazada en `.cursor/agents/`)  
+- Plantillas de brief de tarea; formato de output consolidado  
 - Registro de estado por sprint (o enlace a `docs/roadmap/`)  
 
 ---
