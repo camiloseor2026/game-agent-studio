@@ -1,0 +1,1 @@
+../../agents/art_rigging/art-rigging.md

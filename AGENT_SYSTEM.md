@@ -34,9 +34,9 @@ Gameplay loop, armas, input, daño, bots simples, scaffolding Blueprint/C++, int
 
 Greyboxing, layout, encounters básicos, pacing, navegación, documentación de nivel. Subagente Cursor: `agents/world/world.md` (enlazado en `.cursor/agents/world.md`). Skills: `skills/level-layout-brief/`, `greybox-planning/`, `encounter-flow-mapping/`, `traversal-logic-review/`, `spatial-checklist/`.
 
-### C — Art / 3D / Rigging (`/agents/art_rigging/`)
+### C — Art / 3D / Rigging (`agents/art_rigging/`)
 
-Pipeline de assets, formatos, naming, LODs, rig, animaciones placeholder, límites genérico vs manual.
+Pipeline de assets, formatos, naming, LODs, rig, animaciones placeholder, límites genérico vs manual. Subagente Cursor: `agents/art_rigging/art-rigging.md` (enlazado en `.cursor/agents/art-rigging.md`). Skills: `skills/asset-pipeline-checklist/`, `rigging-handoff-brief/`, `placeholder-asset-planning/`, `unreal-asset-naming-validation/`, `art-integration-notes/`.
 
 ### D — QA & Validation (`/agents/qa/`)
 
