@@ -20,7 +20,7 @@ Demostrar que un pipeline agentic bien diseñado puede reducir tiempo de iteraci
 ```text
 /docs          Visión, arquitectura, agentes, roadmap, QA, research, decisiones
 /agents        Definiciones y artefactos por agente (p. ej. orquestador en agents/orchestrator/)
-/skills        Skills del proyecto (p. ej. smoke-checklist-generation, acceptance-criteria-validation, …)
+/skills        Skills del proyecto (p. ej. market-scan-template, benchmark-summary, smoke-checklist-generation, …)
 /.cursor       Punto de montaje para Cursor: symlinks a agents/ y skills/ (subagentes + skills)
 /mcp           Configuración y notas de MCPs
 /prompts       Prompts versionados

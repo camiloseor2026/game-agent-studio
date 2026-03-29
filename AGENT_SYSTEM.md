@@ -42,9 +42,9 @@ Pipeline de assets, formatos, naming, LODs, rig, animaciones placeholder, límit
 
 Test plans, smoke, regresión, performance checks, taxonomía de bugs, validación de prompts/outputs, criterios de aceptación. Subagente Cursor: `agents/qa/qa.md` (enlazado en `.cursor/agents/qa.md`). Skills: `skills/smoke-checklist-generation/`, `acceptance-criteria-validation/`, `bug-report-template/`, `regression-review/`, `task-completion-audit/`, `tdd-process/`.
 
-### E — Market Research & Product Intelligence (`/agents/market/`)
+### E — Market Research & Product Intelligence (`agents/market/`)
 
-Géneros, señales de mercado, benchmarks, monetización (insight), feedback público → diseño y GTM.
+Géneros, señales de mercado, benchmarks, monetización (insight), feedback público → diseño y GTM. Subagente Cursor: `agents/market/market.md` (enlazado en `.cursor/agents/market.md`). Skills: `skills/market-scan-template/`, `benchmark-summary/`, `trend-clustering/`, `audience-hypothesis-writing/`, `feature-opportunity-analysis/`.
 
 ### F — Live Services & Operations (`/agents/liveops/`)
 
