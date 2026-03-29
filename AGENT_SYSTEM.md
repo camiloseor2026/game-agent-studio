@@ -26,9 +26,9 @@
 
 ## Subagentes
 
-### A — Gameplay & Systems (`/agents/gameplay/`)
+### A — Gameplay & Systems (`agents/gameplay/`)
 
-Gameplay loop, armas, input, daño, bots simples, scaffolding Blueprint/C++, integración entre sistemas.
+Gameplay loop, armas, input, daño, bots simples, scaffolding Blueprint/C++, integración entre sistemas. Subagente Cursor: `agents/gameplay/gameplay.md` (enlazado en `.cursor/agents/gameplay.md`). Skills: `skills/gameplay-system-breakdown/`, `mechanic-spec-writing/`, `feature-to-task-conversion/`, `unreal-gameplay-task-framing/`.
 
 ### B — World & Design (`/agents/world/`)
 
