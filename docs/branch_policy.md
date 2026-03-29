@@ -1,6 +1,6 @@
 # Branch Policy
 
-Equipo: **Camilo** (PO / decisión final), **ChatGPT** (arquitectura, briefs, revisiones), **Cursor** (cambios locales en repo).
+Equipo: **Camilo** (PO / decisión final), **Orquestador y subagentes** (flujo y documentación interna), **Cursor** (ejecución local en el repo según brief).
 
 ## Branches
 
@@ -19,8 +19,8 @@ Equipo: **Camilo** (PO / decisión final), **ChatGPT** (arquitectura, briefs, re
 2. Los cambios funcionales deben hacerse en `feature/*` o en una rama específica según el tipo de tarea.
 3. Los cambios pequeños de documentación pueden ir directo a `main` **solo si Camilo los revisa primero en VS Code**.
 4. **No force-push** a `main`.
-5. Todo merge a `main` requiere revisión humana de **Camilo**.
-6. ChatGPT puede apoyar con revisión de estructura, contenido o criterios, pero no reemplaza la aprobación final del PO.
+5. Todo merge a `main` requiere revisión y aprobación de **Camilo**.
+6. Una **revisión externa** (si Camilo la solicita) es orientativa; no sustituye la aprobación del PO.
 7. Los commits deben ser claros, cortos y en imperativo:
    - `add QA checklist`
    - `update agent brief template`

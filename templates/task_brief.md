@@ -2,8 +2,8 @@
 
 **ID:** `TASK-___`  
 **Fecha:** YYYY-MM-DD  
-**Autor:** Camilo | ChatGPT | Cursor  
-**Ejecutor previsto:** Cursor | ChatGPT | Camilo  
+**Autor:** Camilo | Orquestador  
+**Ejecutor previsto:** Cursor (repo) | Camilo (decisión) | Subagente (solo documentación en `agents/` / `docs/`)  
 **Prioridad:** Alta | Media | Baja  
 **Tipo de tarea:** Docs | Research | Repo Setup | Gameplay | QA | Art Pipeline | LiveOps | Other
 

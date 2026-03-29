@@ -1,5 +1,11 @@
 # Sistema de agentes
 
+## Roles en el repositorio
+
+- **Camilo:** product owner, priorización y aprobación final.  
+- **Cursor:** ejecución local sobre el repositorio (archivos, scripts, según brief); no es un rol de flujo interno, es la herramienta de implementación.  
+- **Orquestador y subagentes:** roles de **flujo de trabajo** (cómo se parte el trabajo y qué se documenta en `agents/` y `docs/`); no son agentes en runtime dentro del repo.
+
 ## Orquestador
 
 **Responsabilidades**
@@ -49,7 +55,7 @@ Telemetría conceptual, eventos, economy hooks futuros, retención, patch notes,
 ## Capas de trabajo
 
 1. **Orquestación** — Backlog, sprints, prioridad, criterios de aceptación, decisiones, estado por agente  
-2. **Ejecución** — Cursor en repo, planes/artefactos de agentes, scripts locales, Unreal  
+2. **Ejecución** — Cambios en repo vía Cursor según brief; planes y artefactos de orquestador/subagentes; scripts locales; Unreal  
 3. **Validación** — Automatización, revisión humana, smoke en engine, performance, documentación  
 4. **Aprendizaje** — Errores recurrentes, prompts útiles, skills, templates, restricciones, deuda técnica  
 

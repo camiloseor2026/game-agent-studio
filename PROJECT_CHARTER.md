@@ -42,9 +42,9 @@ Un ecosistema bien orquestado (agentes, skills, MCPs, repo, validaciones, workfl
 
 | Rol | Responsabilidad |
 |-----|-----------------|
-| Product Owner / Creative Director | Visión, prioridades, aceptación |
-| GM técnico (ChatGPT u otro) | Arquitectura del framework, decisiones de sistema |
-| Cursor + agentes | Ejecución en repo, automatización, iteración |
+| Product Owner / Creative Director (Camilo) | Visión, prioridades, aceptación final |
+| Orquestador y subagentes | Flujo de trabajo documentado: descomposición, briefs, artefactos en `agents/` y `docs/` |
+| Cursor | Ejecución local en el repositorio (archivos, scripts) según brief aprobado |
 
 ## KPIs orientativos
 

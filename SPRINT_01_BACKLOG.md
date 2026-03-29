@@ -19,11 +19,11 @@ Objetivo: **que el entorno pueda operar** y quede listo para ejecutar en Cursor 
 |---|--------|-------|--------|
 | 1 | Visión del juego (1 página) en `docs/vision/` | PO | Pendiente |
 | 2 | Crear remoto GitHub, `git remote`, primer push | PO + Cursor | Pendiente |
-| 3 | Documento de arquitectura inicial en `docs/architecture/` | GM + Cursor | Pendiente |
+| 3 | Documento de arquitectura inicial en `docs/architecture/` | Orquestador + Cursor | Pendiente |
 | 4 | Instalar Unreal + toolchain; anotar versión en `TECH_DECISIONS_LOG.md` | PO | Pendiente |
 | 5 | Crear proyecto UE en `unreal/` (nombre acordado) y primer commit de proyecto | Cursor | Pendiente |
 | 6 | Backlog detallado Etapa 1 (microvertical shooter) en `docs/roadmap/` | Orquestador | Pendiente |
-| 7 | Primer prompt pack por agente en `/prompts/` (stubs) | GM | Pendiente |
+| 7 | Primer prompt pack por agente en `/prompts/` (stubs) | Orquestador | Pendiente |
 
 ## Criterios de aceptación del Sprint 01
 

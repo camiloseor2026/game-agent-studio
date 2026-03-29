@@ -1,6 +1,6 @@
 # Naming Conventions
 
-Objetivo: que Camilo, ChatGPT y Cursor encuentren cosas sin adivinar.
+Objetivo: que Camilo y quien ejecute con Cursor encuentren cosas sin adivinar, alineado a lo documentado por el orquestador en `docs/`.
 
 ## General rule
 - Preferir nombres claros, cortos y consistentes.
