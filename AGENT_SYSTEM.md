@@ -38,9 +38,9 @@ Greyboxing, layout, encounters básicos, pacing, navegación, documentación de 
 
 Pipeline de assets, formatos, naming, LODs, rig, animaciones placeholder, límites genérico vs manual. Subagente Cursor: `agents/art_rigging/art-rigging.md` (enlazado en `.cursor/agents/art-rigging.md`). Skills: `skills/asset-pipeline-checklist/`, `rigging-handoff-brief/`, `placeholder-asset-planning/`, `unreal-asset-naming-validation/`, `art-integration-notes/`.
 
-### D — QA & Validation (`/agents/qa/`)
+### D — QA & Validation (`agents/qa/`)
 
-Test plans, smoke, regresión, performance checks, taxonomía de bugs, validación de prompts/outputs, criterios de aceptación.
+Test plans, smoke, regresión, performance checks, taxonomía de bugs, validación de prompts/outputs, criterios de aceptación. Subagente Cursor: `agents/qa/qa.md` (enlazado en `.cursor/agents/qa.md`). Skills: `skills/smoke-checklist-generation/`, `acceptance-criteria-validation/`, `bug-report-template/`, `regression-review/`, `task-completion-audit/`, `tdd-process/`.
 
 ### E — Market Research & Product Intelligence (`/agents/market/`)
 
