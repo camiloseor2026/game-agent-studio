@@ -1,28 +1,119 @@
-# Naming conventions
+# Naming Conventions
 
 Objetivo: que Camilo, ChatGPT y Cursor encuentren cosas sin adivinar.
 
-## Repo y ramas
+## General rule
+- Preferir nombres claros, cortos y consistentes.
+- No mezclar estilos dentro del mismo grupo de archivos o carpetas.
+- Evitar abreviaturas ambiguas.
 
-- Carpetas: `snake_case` o `kebab-case` según carpeta existente del repo; **no mezclar** dentro del mismo nivel.
-- Ramas: `feature/TASK-001-shooter-hud` (ID del brief + slug corto).
+## Repository folders
+- Para nuevas carpetas del repo, usar `snake_case`.
+- Mantener nombres ya existentes si el repo ya los creó de otra forma y no vale la pena refactorizar.
+- Ejemplos:
+  - `docs`
+  - `agents`
+  - `art_rigging`
+  - `live_ops`
 
-## Documentación
+## Branches
+- Formato recomendado:
+  - `feature/TASK-001-short-slug`
+  - `docs/short-slug`
+  - `research/short-slug`
+  - `hotfix/short-slug`
 
-- Archivos: `MAYUS_UNDERSCORE.md` solo en raíz acordada (`PROJECT_CHARTER.md`); en `docs/`: `kebab-case.md` o `snake_case.md` — **preferir `snake_case.md`** en este repo para nuevos docs.
-- Task IDs: `TASK-###` secuencial o por sprint (`TASK-S01-003`).
+Ejemplos:
+- `feature/TASK-001-shooter-hud`
+- `docs/branch-policy-update`
+- `research/shooter-market-scan`
 
-## Unreal (cuando exista el proyecto)
+## Documentation
+- En la raíz del repo, usar `UPPER_SNAKE_CASE.md` para documentos fundacionales acordados.
+- Ejemplos:
+  - `PROJECT_CHARTER.md`
+  - `AGENT_SYSTEM.md`
+  - `SPRINT_01_BACKLOG.md`
+  - `TECH_DECISIONS_LOG.md`
 
-- **Maps:** `L_<Area>_<Variante>` (ej. `L_Greybox_Arena01`).
-- **Blueprints:** `BP_<Sistema>_<Nombre>` (ej. `BP_Weapon_Pistol`).
-- **Assets genéricos:** prefijo por tipo (`SM_`, `SK_`, `T_`, `M_`) según guía UE del equipo; documentar la tabla en este archivo cuando se fije la versión de engine.
+- En `docs/`, usar `snake_case.md` para todos los nuevos documentos.
+- Ejemplos:
+  - `branch_policy.md`
+  - `naming_conventions.md`
+  - `qa_workflow.md`
 
-## Agentes y prompts
+## Task IDs
+- Formato base: `TASK-###`
+- Formato por sprint si aplica: `TASK-S01-003`
 
-- Carpeta agente: coincide con `agents/` (`gameplay`, `world`, `art_rigging`, etc.).
-- Prompts: `prompts/<agente>_<tema>.md` o `.txt` (ej. `prompts/qa_smoke_checklist.md`).
+## Templates
+- En `templates/`, usar `snake_case.md`
+- Ejemplos:
+  - `task_brief.md`
+  - `agent_output.md`
+
+## Prompts
+- En `prompts/`, usar:
+  - `<agent>_<topic>.md`
+- Ejemplos:
+  - `qa_smoke_checklist.md`
+  - `gameplay_weapon_prompt.md`
+  - `world_graybox_prompt.md`
+
+## Agents
+- Cada carpeta debe coincidir con el nombre del agente en `agents/`
+- Ejemplos:
+  - `agents/gameplay`
+  - `agents/world`
+  - `agents/art_rigging`
+  - `agents/qa`
+  - `agents/market`
+  - `agents/live_ops`
+
+## Unreal conventions
+Estas reglas aplican cuando exista el proyecto Unreal.
+
+### Maps
+- `L_<Area>_<Variant>`
+- Ejemplo:
+  - `L_Greybox_Arena01`
+
+### Blueprints
+- `BP_<System>_<Name>`
+- Ejemplos:
+  - `BP_Weapon_Pistol`
+  - `BP_Enemy_Grunt`
+  - `BP_GameMode_Shooter`
+
+### Core asset prefixes
+- `SM_` = Static Mesh
+- `SK_` = Skeletal Mesh
+- `T_` = Texture
+- `M_` = Material
+- `MI_` = Material Instance
+- `ABP_` = Animation Blueprint
+- `A_` = Animation
+- `SFX_` = Sound effect
+- `UI_` = UI asset or widget-related asset
+
+Si luego definimos una guía más completa por versión de Unreal, este archivo se amplía.
+
+## Scripts and tools
+- Usar `snake_case`
+- Ejemplos:
+  - `validate_assets.py`
+  - `build_smoke_check.sh`
 
 ## Commits
+- Mensajes cortos, claros y en imperativo.
+- Prefijos opcionales:
+  - `docs:`
+  - `chore:`
+  - `agents:`
+  - `templates:`
+  - `research:`
 
-- Prefijos opcionales: `docs:`, `chore:`, `agents:`, `templates:` — sin código de gameplay hasta que el brief lo pida.
+Ejemplos:
+- `docs: refine branch policy`
+- `templates: update agent output`
+- `agents: add qa handoff template`
