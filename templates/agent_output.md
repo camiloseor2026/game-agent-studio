@@ -1,31 +1,44 @@
-# Agent output
+# Agent Output
 
 **Task ID:** `TASK-___`  
 **Agente:** Orquestador | Gameplay | World | Art/Rigging | QA | Market | LiveOps  
-**Fecha:** YYYY-MM-DD
+**Fecha:** YYYY-MM-DD  
+**Estado:** Done | Partial | Blocked
 
 ## Resumen
+3–5 líneas sobre qué se hizo, qué resultado se obtuvo y qué quedó pendiente si aplica.
 
-3–5 líneas: qué se hizo y el resultado.
+## Archivos creados o modificados
+- `ruta/archivo_1.md`
+- `ruta/archivo_2.md`
 
-## Artefactos
-
-| Tipo | Ubicación / enlace |
-|------|-------------------|
-| Doc / plan | `docs/…` |
-| Prompt / skill | `prompts/…` o `skills/…` |
+## Artefactos entregados
+| Tipo | Ubicación |
+|------|-----------|
+| Documento | `docs/...` |
+| Prompt | `prompts/...` |
+| Skill | `skills/...` |
+| Script | `scripts/...` |
+| Otro | `...` |
 
 ## Decisiones tomadas
+- …
+- Si aplica, registrar también en `TECH_DECISIONS_LOG.md`
 
-- … (o “ninguna”; las importantes van también a `TECH_DECISIONS_LOG.md`)
+## Riesgos o problemas encontrados
+- …
+- …
 
-## Pendientes o handoff
-
-- Para **Cursor:** …
-- Para **ChatGPT:** …
-- Para **Camilo:** …
-
-## Validación
-
+## Validación realizada
 - [ ] Cumple criterios de aceptación del brief
-- [ ] Sin gameplay/código no solicitado en este entregable
+- [ ] No modifica archivos no relacionados
+- [ ] No ejecuta operaciones de git
+- [ ] No agrega alcance no solicitado
+
+## Pendientes / handoff
+- **Para Cursor:** …
+- **Para ChatGPT:** …
+- **Para Camilo:** …
+
+## Siguiente paso recomendado
+Una acción concreta y pequeña para continuar.
