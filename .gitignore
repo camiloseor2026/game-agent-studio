@@ -1,0 +1,29 @@
+# Unreal / builds
+**/Binaries/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+**/.vs/
+**/*.VC.db
+**/*.opensdf
+**/*.sdf
+# Descomenta si no versionas soluciones generadas por UE:
+# **/*.sln
+**/*.xcodeproj
+**/*.xcworkspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Builds y artefactos locales (ajustar si versionas algo en /builds)
+builds/*
+!builds/.gitkeep
+
+# Python / tools (si aplica)
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
