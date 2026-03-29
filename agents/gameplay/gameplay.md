@@ -21,6 +21,7 @@ Canonical paths (also linked under `.cursor/skills/`):
 2. `skills/mechanic-spec-writing/SKILL.md` — write dev-readable mechanic specs (rules, edge cases, data/contracts).
 3. `skills/feature-to-task-conversion/SKILL.md` — turn a feature into one or more brief-sized tasks with acceptance criteria.
 4. `skills/unreal-gameplay-task-framing/SKILL.md` — frame tasks for Unreal (BP vs C++, maps, assets placeholders, integration points).
+5. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 

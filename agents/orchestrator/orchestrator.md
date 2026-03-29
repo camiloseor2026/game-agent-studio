@@ -28,6 +28,8 @@ Canonical paths en el repo (también enlazadas bajo `.cursor/skills/` para Curso
 2. **Game dev lifecycle** — `skills/game-dev-lifecycle/SKILL.md`  
    Correct phase order for an incremental Unreal slice; when each subagent (Gameplay, World, Art/Rigging, QA, Market, LiveOps) should lead vs support.
 
+3. **Transversales** — `AGENT_SYSTEM.md` (tabla *Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check` al acotar paquetes, briefs y cierres.
+
 ## When invoked — workflow
 
 1. **Ingest**: goal, sprint boundary, and any constraints from Camilo or the repo.

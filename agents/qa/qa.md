@@ -23,6 +23,7 @@ Rutas canónicas (también bajo `.cursor/skills/`):
 4. `skills/regression-review/SKILL.md` — qué revalidar cuando cambia X.
 5. `skills/task-completion-audit/SKILL.md` — brief vs archivos vs output de agente.
 6. `skills/tdd-process/SKILL.md` — orden test-first: casos y criterios antes del brief de implementación; alinear Red/Green con TASKs.
+7. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 

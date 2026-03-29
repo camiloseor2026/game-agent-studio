@@ -22,6 +22,7 @@ Rutas canónicas (también bajo `.cursor/skills/`):
 3. `skills/placeholder-asset-planning/SKILL.md` — qué placeholders usar en slice y cuándo reemplazar.
 4. `skills/unreal-asset-naming-validation/SKILL.md` — prefijos UE, consistencia con `docs/naming_conventions.md`.
 5. `skills/art-integration-notes/SKILL.md` — notas de integración para Gameplay/World/Cursor en UE.
+6. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 

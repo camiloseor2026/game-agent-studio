@@ -6,6 +6,19 @@
 - **Cursor:** ejecución local sobre el repositorio (archivos, scripts, según brief); no es un rol de flujo interno, es la herramienta de implementación.  
 - **Orquestador y subagentes:** roles de **flujo de trabajo** (cómo se parte el trabajo y qué se documenta en `agents/` y `docs/`); no son agentes en runtime dentro del repo.
 
+## Skills transversales (todos los agentes y Cursor)
+
+Aplicar junto a las skills de dominio. Rutas canónicas bajo `skills/` (enlazadas en `.cursor/skills/`):
+
+| Skill | Propósito |
+|-------|-----------|
+| `task-brief-reader` | Leer el brief sin inventar alcance. |
+| `repo-safe-editing` | Editar solo lo relacionado; respetar restricciones del brief. |
+| `structured-handoff` | Salida clara para el siguiente rol (`templates/agent_output.md`). |
+| `scope-guard` | Detectar y frenar expansión de alcance no acordada. |
+| `unreal-task-framing` | Traducir pedidos a contexto UE sin inventar proyecto. |
+| `acceptance-check` | Validar entrega frente a criterios de aceptación del brief. |
+
 ## Orquestador
 
 **Responsabilidades**

@@ -22,6 +22,7 @@ Rutas canónicas (también bajo `.cursor/skills/`):
 3. `skills/retention-loop-checklist/SKILL.md` — bucles de retorno al juego y fricción.
 4. `skills/patch-note-template/SKILL.md` — comunicación de cambios a jugadores/equipo.
 5. `skills/release-readiness-review/SKILL.md` — checklist pre-release operativo.
+6. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 

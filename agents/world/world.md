@@ -22,6 +22,7 @@ Rutas canónicas (también bajo `.cursor/skills/`):
 3. `skills/encounter-flow-mapping/SKILL.md` — secuencia y ritmo de encuentros.
 4. `skills/traversal-logic-review/SKILL.md` — lógica transversal: qué puede cruzar el jugador, cuándo y bajo qué reglas.
 5. `skills/spatial-checklist/SKILL.md` — lectura espacial, escala, cobertura, claridad.
+6. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 

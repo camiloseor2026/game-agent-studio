@@ -22,6 +22,7 @@ Rutas canónicas (también bajo `.cursor/skills/`):
 3. `skills/trend-clustering/SKILL.md` — agrupar tendencias y ruido vs señal.
 4. `skills/audience-hypothesis-writing/SKILL.md` — hipótesis de jugador comprobables.
 5. `skills/feature-opportunity-analysis/SKILL.md` — de insight a oportunidades de feature priorizadas.
+6. **Transversales** — `AGENT_SYSTEM.md` (*Skills transversales*): `task-brief-reader`, `repo-safe-editing`, `structured-handoff`, `scope-guard`, `unreal-task-framing`, `acceptance-check`.
 
 ## When invoked — workflow
 
