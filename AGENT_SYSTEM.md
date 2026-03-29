@@ -30,9 +30,9 @@
 
 Gameplay loop, armas, input, daño, bots simples, scaffolding Blueprint/C++, integración entre sistemas. Subagente Cursor: `agents/gameplay/gameplay.md` (enlazado en `.cursor/agents/gameplay.md`). Skills: `skills/gameplay-system-breakdown/`, `mechanic-spec-writing/`, `feature-to-task-conversion/`, `unreal-gameplay-task-framing/`.
 
-### B — World & Design (`/agents/world/`)
+### B — World & Design (`agents/world/`)
 
-Greyboxing, layout, encounters básicos, pacing, navegación, documentación de nivel.
+Greyboxing, layout, encounters básicos, pacing, navegación, documentación de nivel. Subagente Cursor: `agents/world/world.md` (enlazado en `.cursor/agents/world.md`). Skills: `skills/level-layout-brief/`, `greybox-planning/`, `encounter-flow-mapping/`, `traversal-logic-review/`, `spatial-checklist/`.
 
 ### C — Art / 3D / Rigging (`/agents/art_rigging/`)
 
