@@ -21,7 +21,24 @@ Formato sugerido por entrada (añadir al final del archivo):
 
 ---
 
-## Pendiente — Motor y versión
+## 2026-03-29 — Proyecto Unreal Arena01 (ubicación y plantilla)
 
-- **Decisión:** (pendiente) Unreal Engine versión X.X + plataformas objetivo.  
-- Registrar aquí al instalar el proyecto.
+- **Contexto:** P01; proyecto creado desde el launcher/editor.  
+- **Decisión:**  
+  - **Ruta en repo:** `unreal/Arena01/` — archivo `Arena01.uproject`.  
+  - **Project Location (disco):** `/Users/camilo.severiche/Documents/Clase Codigo/game-agent-studio/unreal` (proyecto **Arena01** dentro de esa carpeta).  
+  - **Plantilla:** Top Down.  
+  - **Código:** solo **Blueprint** (sin C++).  
+  - **Target platform:** Desktop.  
+  - **Quality preset:** Scalable (ligero) o Maximum (mejor visual); elección local del equipo.  
+- **Motor:** Unreal Engine **5.7** (`EngineAssociation` en `.uproject`).  
+- **Consecuencias:** Briefs y tareas P01 referencian `unreal/Arena01/`; no asumir carpeta `Source/` para lógica de gameplay salvo que se añada C++ después.
+
+---
+
+## 2026-03-29 — P01 Arena-01: modelo de combate y cámara (lock-in de producto)
+
+- **Contexto:** Brief `docs/prototype_01_game_brief.md` §1b.  
+- **Decisión:** Top-down o cámara fija simple (elegir una en implementación); enemigo persigue y mata por contacto (1 hit); jugador usa proyectil simple; 1 hit mata enemigo; 1 hit/contacto mata jugador.  
+- **Alternativas consideradas:** Enemigo a distancia — **excluido** para P01.  
+- **Consecuencias:** Secuencia de trabajo en `docs/prototype_01_implementation_sequence.md`.  

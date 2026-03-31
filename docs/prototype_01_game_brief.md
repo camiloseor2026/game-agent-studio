@@ -11,6 +11,20 @@
 
 ---
 
+## 1b. Design lock-in (P01 — acordado)
+
+Decisiones **cerradas** para implementación; no abrir alternativas en briefs hijos sin nuevo TASK.
+
+| Tema | Decisión |
+|------|-----------|
+| Proyecto UE | Ruta: **`unreal/Arena01/`** (`Arena01.uproject`). Project Location: **`…/game-agent-studio/unreal`**. Plantilla **Top Down**, **Blueprint**, Desktop, UE **5.7** (ver `TECH_DECISIONS_LOG.md`). |
+| Cámara | Alineada a plantilla **Top Down**; si se simplifica a fija, documentar en P01-03 + log. |
+| Enemigo | **Persigue al jugador**; daño por **contacto** (no dispara). |
+| Jugador | **Proyectil simple** (un tipo). |
+| Daño | **1 impacto** mata al enemigo; **1 impacto/contacto** mata al jugador (vida = 1 o equivalente). |
+
+---
+
 ## 2. Purpose of the prototype
 
 Validar que el **sistema de trabajo** (brief → Orquestador → subagentes → Cursor → QA) puede producir un **loop jugable mínimo** en Unreal sin inflar alcance. No demuestra ambición de producto final; demuestra **ejecución coordinada y medible**.
@@ -20,17 +34,17 @@ Validar que el **sistema de trabajo** (brief → Orquestador → subagentes → 
 ## 3. Core gameplay loop
 
 1. Aparecer en una **sala única** (arena).  
-2. **Moverse** y **disparar** hacia un enemigo.  
-3. **Eliminar** al enemigo (un impacto = muerte) **o** ser eliminado por contacto o disparo del enemigo (según lo más simple de implementar en el primer pase).  
-4. Si el jugador muere: **reinicio** al estado inicial de la partida (misma sala, enemigo respawn).  
-5. (Opcional) Incrementar un **contador de kills** visible en pantalla.
+2. **Moverse** (plano) y **disparar proyectil** hacia el enemigo.  
+3. **Eliminar** al enemigo con **un impacto** de proyectil **o** ser eliminado por **contacto** con el enemigo (un toque = muerte del jugador).  
+4. Si el jugador muere: **reinicio** al estado inicial (misma sala, enemigo respawn).  
+5. (Opcional) **Contador de kills** en pantalla.
 
 ---
 
 ## 4. Player actions
 
-- Movimiento en plano (WASD o equivalente; cámara fija o third/first person mínima — **una** opción acordada en implementación).  
-- Disparo principal (un tipo de proyectil o hitscan; **uno**).  
+- Movimiento en plano (WASD o equivalente) con **top-down o cámara fija simple** (una variante por build P01).  
+- **Un** disparo: **proyectil simple** (no hitscan salvo que el proyectil sea visualmente trivial y se documente como tal).  
 - Sin inventario, sin sprint obligatorio, sin habilidades extra.
 
 ---
@@ -38,9 +52,10 @@ Validar que el **sistema de trabajo** (brief → Orquestador → subagentes → 
 ## 5. Enemy behavior
 
 - **Un** tipo de enemigo.  
-- Se acerca al jugador a velocidad constante (simple “move toward player”) **o** dispara proyectil lento si es más rápido de probar; elegir **una** variante en el primer TASK de Gameplay.  
-- **Un golpe** del jugador lo elimina.  
-- Sin oleadas, sin pathfinding complejo: NavMesh opcional; si no, movimiento directo sin obstáculos dinámicos.
+- **Persigue** al jugador (movimiento hacia el jugador; velocidad constante aceptable).  
+- **Daño por contacto** al tocar al jugador (**1 hit** = muerte del jugador).  
+- **Un proyectil** del jugador lo elimina (**1 hit**).  
+- Sin disparo enemigo, sin oleadas, sin IA compleja: NavMesh opcional; si no, movimiento directo en el plano de juego.
 
 ---
 
@@ -49,7 +64,7 @@ Validar que el **sistema de trabajo** (brief → Orquestador → subagentes → 
 | Estado | Condición |
 |--------|-----------|
 | **Victoria de ronda** (opcional para P01) | Enemigo eliminado → respawn enemigo + sumar kill (si hay contador). |
-| **Derrota** | Vida del jugador ≤ 0 (o un hit = muerte si se simplifica aún más). |
+| **Derrota** | **Contacto** con el enemigo (un hit; vida efectiva = 1). |
 | **Reinicio** | Tras derrota (y opcionalmente tras victoria de ronda): recargar posiciones/vida en **la misma** arena sin menú complejo (ej. tecla R o auto-respawn tras 2 s). |
 
 No se exige menú principal ni pantalla de créditos.
@@ -71,7 +86,7 @@ No se exige menú principal ni pantalla de créditos.
 ## 8. Out of scope
 
 - Multiplayer, netcode, servicios en vivo, telemetría implementada.  
-- Física avanzada, destrucción, cover system, IA con árboles complejos, más de un tipo de enemigo.  
+- Física avanzada, destrucción, cover system, IA con árboles complejos, más de un tipo de enemigo, **enemigo a distancia / proyectiles enemigos**.  
 - Mundo grande, múltiples salas, narrativa, audio final, cinemáticas.  
 - Economía, progresión meta, guardado persistente más allá de lo necesario para PIE.  
 - Optimización de producción (LOD fino, light bake complejo).

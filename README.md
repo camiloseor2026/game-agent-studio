@@ -27,7 +27,7 @@ Demostrar que un pipeline agentic bien diseñado puede reducir tiempo de iteraci
 /templates     Plantillas (briefs, outputs, bugs)
 /tools         Herramientas auxiliares
 /scripts       Validaciones y automatización local
-/unreal        Proyecto Unreal (añadir aquí el `.uproject` cuando exista)
+/unreal        Proyecto UE P01: `unreal/Arena01/Arena01.uproject` (ver `unreal/README.md`)
 /tests         Pruebas automatizadas (fuera del engine cuando aplique)
 /telemetry     Diseño y hooks de telemetría (conceptual / inicial)
 /builds        Artefactos de build (normalmente en .gitignore salvo documentación)
